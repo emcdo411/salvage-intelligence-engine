@@ -7,6 +7,8 @@
 <img src="https://img.shields.io/badge/Status-MONITOR_%2F_SUBCONTRACT_PURSUE-yellow?style=for-the-badge&logo=statuspage&logoColor=white"/>
 <img src="https://img.shields.io/badge/TDLR_Watch-ACTIVE-red?style=for-the-badge&logo=radar&logoColor=white"/>
 <img src="https://img.shields.io/badge/GC_Identified-NO-critical?style=for-the-badge&logo=alert&logoColor=white"/>
+<img src="https://img.shields.io/badge/Proxy_Scan-MANUAL_STEP_REQUIRED-orange?style=for-the-badge&logo=search&logoColor=white"/>
+<img src="https://img.shields.io/badge/Authorized_Demo_Commenced-NO_(Legally_Verified)-brightgreen?style=for-the-badge&logoColor=white"/>
 
 <br/>
 
@@ -55,9 +57,10 @@
 <div align="center">
 
 ![Method](https://img.shields.io/badge/Method-Pre--Demo_Signal_Detection-purple?style=flat-square)
-![Source](https://img.shields.io/badge/Source-Public_Records_%2B_Zoning_Commission-blue?style=flat-square)
+![Source](https://img.shields.io/badge/Source-Legally_Required_Public_Filings-blue?style=flat-square)
 ![Lead_Time](https://img.shields.io/badge/Lead_Time-Weeks_to_Months_Before_Demo-green?style=flat-square)
-![iScrap](https://img.shields.io/badge/iScrap-Would_Miss_This_Entirely-red?style=flat-square)
+![Surety](https://img.shields.io/badge/Surety_Basis-TDLR_%2B_Accela_(Mandatory_Filings)-brightgreen?style=flat-square)
+![Proxy](https://img.shields.io/badge/Proxy_Markets-Confirmation_Step_(Not_Auto--Verified)-orange?style=flat-square)
 
 </div>
 
@@ -68,6 +71,23 @@ Most salvage operators wait for a wrecking ball to show up or a listing to appea
 3. Every other operator in the market is aware
 
 SIE identified the Spring Hill & Spring Glen opportunity by running **four independent public data signals** through a 13-layer scoring framework — before any demo permit was pulled, before any TABS filing was filed, and before any GC was named. That is the competitive moat.
+
+### ⚖️ What SIE Can Claim With Certainty vs. What Requires Your Confirmation
+
+This is a critical distinction the framework makes explicit. SIE's confidence is not uniform across all signals — it is **tiered by verifiability**.
+
+| Claim | Verified By | Certainty | Basis |
+|-------|------------|-----------|-------|
+| Authorized demolition has not legally commenced | TDLR TABS + Accela | ✅ **HIGH** | Both are **mandatory state filings** — no filing = no legal demo |
+| GC has not been publicly named | TDLR TABS search | ✅ **HIGH** | TABS filing is legally required and names the GC — absence is verifiable |
+| No demo permit has been pulled | Fort Worth Accela | ✅ **HIGH** | Public permit record — binary and searchable |
+| Materials have not appeared on Facebook Marketplace | Manual proxy scan | ⚠️ **LOW** | SIE documents this as a **manual confirmation step** — the script exists but is not automated |
+| No tenant stripping has occurred | On-site observation only | ❌ **NONE** | SIE explicitly flags this via the **Prior Access Discount in L5** — assume some stripping has occurred |
+| No iScrap listing exists for this property | Manual proxy scan | ⚠️ **LOW** | iScrap monitoring is a **manual step** — not auto-verified in this run |
+
+> **The key insight:** SIE's surety comes from **legally required public filings** (TDLR, Accela), not from monitoring informal markets. A TABS filing is mandatory, timestamped, and publicly searchable. A Facebook Marketplace listing is voluntary, anonymous, and noisy. This is why TDLR is the framework's primary tripwire — its absence is meaningful in a way that Marketplace's absence is not.
+>
+> **Before acting on this report:** Run the proxy scan manually (see Immediate Action Checklist). The proxy scan is a **confirmation step**, not a layer SIE has already completed.
 
 ---
 
@@ -148,7 +168,8 @@ SIE identified the Spring Hill & Spring Glen opportunity by running **four indep
 ![Watch Flag](https://img.shields.io/badge/Watch_Flag-ACTIVE-red?style=for-the-badge&logo=radar&logoColor=white)
 ![Status](https://img.shields.io/badge/TABS_Status-PENDING_—_No_Filing_Found-orange?style=flat-square)
 ![GC](https://img.shields.io/badge/GC_Identified-NO_—_Window_Open-critical?style=flat-square)
-![Action](https://img.shields.io/badge/Action-Search_Weekly-yellow?style=flat-square)
+![Action](https://img.shields.io/badge/TDLR_Check-Search_Weekly-yellow?style=flat-square)
+![Proxy](https://img.shields.io/badge/Proxy_Scan-MANUAL_STEP_—_Not_Yet_Run-orange?style=flat-square)
 
 </div>
 
@@ -173,7 +194,27 @@ Search C → Owner:    Fort Worth Affordability
 Search D → Developer: Ojala Partners
 ```
 
-**Why it matters:** This layer exists because of a structural asymmetry in the demolition market. Most salvage operators don't know TABS filings exist. SIE treats them as the single most reliable GC identification signal available in the Texas market. When the filing appears, you have a 24–48 hour window to be first to the GC's phone.
+### ⚠️ What L1A Can and Cannot Verify
+
+L1A operates in two distinct modes — one with high certainty, one that requires your manual action:
+
+**HIGH CERTAINTY — Legally verifiable via TDLR:**
+- Whether a TABS asbestos abatement notification has been filed
+- Whether a GC has been publicly named on that filing
+- Whether authorized demolition on a pre-1978 structure has legally commenced
+
+The absence of a TABS filing is **meaningful and verifiable** because the filing is a legal prerequisite. A pre-1978 structure cannot be legally demolished in Texas without it. No filing = no legal demo. This is the framework's primary confidence anchor.
+
+**REQUIRES MANUAL CONFIRMATION — Informal markets:**
+- Whether materials from this property have appeared on Facebook Marketplace
+- Whether any listings have appeared on the iScrap App Fort Worth board
+- Whether tenant stripping (informal, pre-demo removal of materials) has already begun
+
+> These proxy signals are documented in L1A as a **manual confirmation step the operator must run before acting.** The `scripts/marketplace-scan/scan_marketplace_signals.py` script exists in the repo as a stub — it is not yet automated. Until it is, treat Marketplace and iScrap as unverified. The Prior Access Discount in L5 accounts for the risk that some stripping has already occurred regardless.
+
+**Why the distinction matters:** TDLR's absence is a strong signal because the filing is mandatory. Marketplace's absence is a weak signal because listing materials there is optional and anonymous. An operator who strips copper informally and sells it privately leaves no trace on either platform. SIE is honest about this boundary — and the Prior Access Discount in L5 is the financial buffer that accounts for it.
+
+**Why it matters for your position:** Even with the proxy scan uncertainty, the TDLR/Accela verification gives you something your competitors almost certainly don't have — a legally-grounded confirmation that full-scale authorized demolition has not commenced. That is not a guess. That is a searchable public record.
 
 ---
 
@@ -248,7 +289,7 @@ Search D → Developer: Ojala Partners
 
 </div>
 
-**What this layer does:** L5 estimates the gross material value (GMV) of salvageable materials based on structure era, unit count, and current DFW spot prices. It also applies the Prior Access Discount — a v1.6 addition — when tenants are still being relocated (elevated stripping risk).
+**What this layer does:** L5 estimates the gross material value (GMV) of salvageable materials based on structure era, unit count, and current DFW spot prices. It also applies the **Prior Access Discount** — a v1.6 addition — when tenants are still being relocated. Critically, this discount is the framework's financial answer to the one thing SIE cannot verify from public records alone: whether informal stripping has already begun on Marketplace or in person.
 
 **What it found here:**
 
@@ -260,9 +301,9 @@ Search D → Developer: Ojala Partners
 | Steel / light iron (framing, doors) | 40,000–80,000 lbs | $0.06–$0.12/lb | $2,400–$9,600 |
 | Appliances (pre-tenant strip) | variable | $15–$40/unit | $3,000–$17,200 |
 
-> ⚠️ **Prior Access Discount applied:** Tenants are being relocated in phases. Expect 15–25% reduction on copper and appliance line items due to tenant stripping risk before demo access is granted.
+> ⚠️ **Prior Access Discount applied (15–25%):** Tenants are being relocated in phases. The proxy scan (Marketplace, iScrap, Street View) has **not yet been run as of this report.** The discount is applied regardless — it assumes some informal stripping has already occurred whether or not it has appeared publicly. This is the framework's explicit acknowledgment that informal market activity cannot be verified from public records alone. Running the proxy scan would either confirm this discount is adequate or indicate it needs to be raised.
 
-**Why it matters:** The GMV spread ($29,750–$91,500) is wide because two unknowns dominate: how much copper has already been stripped by relocating tenants, and whether appliances were removed before you get in. A site walk immediately closes this gap and would push YCS from 58 to 70+.
+**Why it matters:** The Prior Access Discount converts an unverifiable risk into a quantified financial buffer. SIE does not claim Marketplace and iScrap are clean — it prices in the possibility that they aren't. That is a more honest and more defensible posture than ignoring the risk or pretending public record silence equals market silence.
 
 ---
 
@@ -443,17 +484,19 @@ Phase 2 Re-Run:  Calendar Q1 2028
 
 <div align="center">
 
-| Source | URL | Signal Type | Strength | Lead Time |
-|--------|-----|------------|---------|-----------|
-| Fort Worth Zoning Commission | fortworthtexas.gov | Rezoning / Demo Intent | ★★★★★ | 12–24 months |
-| TDLR TABS | tdlr.texas.gov/tabs/search.htm | GC Identification | ★★★★★ | 0–30 days pre-demo |
-| Fort Worth Accela | aca-prod.accela.com/CFW | Demo Permit | ★★★★★ | 0–14 days pre-demo |
-| Fort Worth Report | fortworthreport.org | Developer / Owner ID | ★★★★ | 6–18 months |
-| Facebook Marketplace ZIP 76107 | facebook.com/marketplace | Tenant Strip Proxy | ★★★ | 30–60 days pre-demo |
-| iScrap App Fort Worth | iscrapapp.com | Post-Demo Pricing | ★★★ | Post-demo only |
-| Google Street View | maps.google.com | Physical Proxy Signal | ★★ | Real-time |
+| Source | Signal Type | Strength | Lead Time | Verification Mode |
+|--------|------------|---------|-----------|------------------|
+| Fort Worth Zoning Commission | Rezoning / Demo Intent | ★★★★★ | 12–24 months | ✅ Auto — public record |
+| TDLR TABS | GC Identification | ★★★★★ | 0–30 days pre-demo | ✅ Auto — legally required filing |
+| Fort Worth Accela | Demo Permit | ★★★★★ | 0–14 days pre-demo | ✅ Auto — public permit record |
+| Fort Worth Report / City Council | Developer / Owner ID | ★★★★ | 6–18 months | ✅ Auto — press + public records |
+| Facebook Marketplace ZIP 76107 | Tenant Strip Proxy | ★★★ | 30–60 days pre-demo | ⚠️ **Manual — operator must run** |
+| iScrap App Fort Worth | Informal Market Proxy | ★★★ | 30–60 days pre-demo | ⚠️ **Manual — operator must run** |
+| Google Street View delta | Physical Site Proxy | ★★ | Real-time | ⚠️ **Manual — operator must run** |
 
 </div>
+
+> **Verification Mode key:** Sources marked ✅ Auto are checked by SIE through legally required or publicly indexed records — their absence is a meaningful, verifiable signal. Sources marked ⚠️ Manual are informal markets that the operator must check directly before acting on this report. Silence on a manual source is **not** a verified clean signal — it is an unchecked assumption.
 
 ---
 
@@ -463,23 +506,27 @@ Phase 2 Re-Run:  Calendar Q1 2028
 
 ![iScrap](https://img.shields.io/badge/iScrap-Reactive_(Post--Demo_Pricing_Only)-red?style=flat-square)
 ![SIE](https://img.shields.io/badge/SIE-Proactive_(Pre--Demo_Signal_Detection)-brightgreen?style=flat-square)
+![Surety](https://img.shields.io/badge/SIE_Surety_Basis-Legally_Required_Public_Filings-blue?style=flat-square)
 
 </div>
 
-| Capability | iScrap | SIE v1.7 |
-|-----------|--------|----------|
-| Live scrap prices | ✅ | ✅ (DFW reference table) |
-| Zoning change monitoring | ❌ | ✅ L1 Signal Detection |
-| TDLR TABS / GC identification | ❌ | ✅ L1A Watch Protocol |
-| Pre-demo lead time | ❌ (post-demo) | ✅ Weeks to months ahead |
-| Risk-adjusted bid range | ❌ | ✅ L7 Bid Calculus |
-| Yield by structure era | ❌ | ✅ L5 Yield Estimation |
-| Tenant stripping risk model | ❌ | ✅ Prior Access Discount |
-| Competition pressure scoring | ❌ | ✅ L8 Bifurcated CPS |
-| Strategic play routing | ❌ | ✅ L9 Play Engine |
-| Phase-specific opportunity tracking | ❌ | ✅ L11 Outcome Loop |
+| Capability | iScrap | SIE v1.7 | SIE Certainty Level |
+|-----------|--------|----------|-------------------|
+| Live scrap prices | ✅ | ✅ (DFW reference table) | ✅ High |
+| Zoning change monitoring | ❌ | ✅ L1 Signal Detection | ✅ High — public record |
+| TDLR TABS / GC identification | ❌ | ✅ L1A Watch Protocol | ✅ High — legally required filing |
+| Demo permit verification | ❌ | ✅ Fort Worth Accela | ✅ High — public permit record |
+| Pre-demo lead time | ❌ (post-demo) | ✅ Weeks to months ahead | ✅ High — structural lead |
+| Facebook Marketplace monitoring | ❌ | ⚠️ Manual proxy scan | ⚠️ Low — operator must run |
+| iScrap informal market monitoring | ❌ | ⚠️ Manual proxy scan | ⚠️ Low — operator must run |
+| Tenant stripping verification | ❌ | ⚠️ Priced into L5 discount | ⚠️ None — assumed, not verified |
+| Risk-adjusted bid range | ❌ | ✅ L7 Bid Calculus | ✅ High — formula-based |
+| Yield by structure era | ❌ | ✅ L5 Yield Estimation | ✅ Moderate — era assumptions |
+| Competition pressure scoring | ❌ | ✅ L8 Bifurcated CPS | ✅ Moderate |
+| Strategic play routing | ❌ | ✅ L9 Play Engine | ✅ High |
+| Phase-specific opportunity tracking | ❌ | ✅ L11 Outcome Loop | ✅ High |
 
-**The bottom line:** iScrap tells you what scrap is worth after someone else already got the job. SIE tells you who owns the property, who's developing it, when demo is coming, what it's worth, how to bid it, and who to call — before anyone else knows the job exists.
+**The bottom line:** iScrap tells you what scrap is worth after someone else already got the job. SIE tells you who owns the property, who's developing it, when demo is coming, what it's worth, how to bid it, and who to call — before anyone else knows the job exists. Its certainty is anchored to **legally required public filings** (TDLR, Accela, zoning records), not informal market silence. The proxy scan closes the remaining gap — and the Prior Access Discount prices in the risk until that scan is run.
 
 ---
 
@@ -488,19 +535,39 @@ Phase 2 Re-Run:  Calendar Q1 2028
 <div align="center">
 
 ![Priority](https://img.shields.io/badge/Priority-EXECUTE_THIS_WEEK-critical?style=for-the-badge)
+![Note](https://img.shields.io/badge/Note-Proxy_Scans_Must_Run_Before_Bidding-orange?style=for-the-badge)
 
 </div>
 
+**STEP 1 — Legally Verified Checks (SIE has confirmed these are clean as of April 2, 2026):**
 ```
-[ ] Run TDLR TABS search — 3100 Hamilton Ave, Fort Worth (this week)
-[ ] Run TDLR TABS search — 3200 Hamilton Ave, Fort Worth (this week)
-[ ] Run TDLR TABS search — "Fort Worth Affordability" (owner name)
-[ ] Run TDLR TABS search — "Ojala Partners" (developer name)
-[ ] Contact Ojala Partners LP Dallas — ask for Daniel Smith
+[x] TDLR TABS — no filing found for 3100 or 3200 Hamilton Ave (verified)
+[x] No demo permit pulled per Fort Worth Accela (verified)
+[x] No GC publicly named in any press or public record (verified)
+```
+
+**STEP 2 — Manual Proxy Scans (operator must run BEFORE bidding — not yet completed):**
+```
+[ ] Facebook Marketplace — ZIP 76107, search: HVAC, fixtures, doors, windows, copper, appliances
+[ ] iScrap App Fort Worth board — search bulk metal listings near West 7th / Cultural District
+[ ] Google Street View — compare current vs. 6-month-old imagery at 3100 & 3200 Hamilton Ave
+      Look for: dumpsters, contractor vehicles, stripped rooftop HVAC units, open windows
+[ ] Adjust L5 Prior Access Discount UP if any proxy signal is found (raise from 15–25% to 30–40%)
+```
+
+**STEP 3 — Outreach (execute in parallel with proxy scans):**
+```
+[ ] Contact Ojala Partners LP Dallas — ask for Daniel Smith — reference ZC-24-115
 [ ] Contact Fort Worth Housing Solutions — reference ZC-24-115
-[ ] Set Facebook Marketplace alert — ZIP 76107, keywords: HVAC, fixtures, doors, windows, appliances
-[ ] Check iScrap App Fort Worth board — any bulk metal listings near West 7th
 [ ] Log outreach date + response → recalibrate APE in pipeline
+[ ] If warm response received → request site walk → rerun L7 with YCS at 70+
+```
+
+**STEP 4 — Ongoing Monitoring:**
+```
+[ ] Re-run TDLR TABS search weekly (next: April 7, 2026)
+[ ] Re-run proxy scans bi-weekly
+[ ] When TABS filing appears → GC is named → contact within 24 hours
 [ ] Calendar Phase 2 re-run — Q1 2028
 ```
 
