@@ -1,0 +1,25 @@
+﻿{
+  "property_name": "Spring Hill & Spring Glen Apartments",
+  "addresses": [
+    "3100 Hamilton Ave, Fort Worth, TX 76107",
+    "3200 Saint Juliet Street, Fort Worth, TX 76107"
+  ],
+  "owner": "Fort Worth Affordability Inc.",
+  "developer": "Ojala Partners",
+  "year_built": 1962,
+  "unit_count": 430,
+  "structure_type": "multifamily_garden_style",
+  "rezoning_approved": true,
+  "rezoning_date": "2024-10",
+  "demo_permit_confirmed": false,
+  "tdlr_tabs_filed": false,
+  "gc_identified": false,
+  "phase_1_groundbreaking": "2026",
+  "phase_2_start": "2029",
+  "sie_run_date": "2026-04-02",
+  "sie_version": "1.7",
+  "ape_score": 38,
+  "freshness_score": 72,
+  "tdlr_watch_flag": "ACTIVE",
+  "final_action": "MONITOR_SUBCONTRACT_PURSUE"
+}

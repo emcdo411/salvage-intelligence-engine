@@ -1,0 +1,12 @@
+﻿{
+  "updated": "2026-04-02",
+  "source": "iScrap App — DFW local yards (update weekly)",
+  "prices_per_lb": {
+    "copper_bare_bright": { "low": 3.20, "high": 4.10 },
+    "copper_1_insulated": { "low": 1.80, "high": 2.50 },
+    "copper_2_mixed":     { "low": 1.40, "high": 2.00 },
+    "brass_yellow":       { "low": 1.60, "high": 2.20 },
+    "aluminum_clean":     { "low": 0.45, "high": 0.70 },
+    "steel_light_iron":   { "low": 0.06, "high": 0.12 }
+  }
+}
